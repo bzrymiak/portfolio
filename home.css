@@ -1,0 +1,140 @@
+/* subheadings */
+h3 {
+    margin: 2rem;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* name title */
+#name-card {
+    padding: 2rem;
+    background-image: url(https://i.pinimg.com/736x/c0/e0/94/c0e0947084ee61872c632c4d060e00d9.jpg);
+    background-size: 100% auto;
+    background-position: center;
+}
+
+#name-card h2 {
+    margin: 0;
+    font-family: 'Slackey';
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+/* project card */
+#projects {
+    padding-bottom: 3.5rem;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: darkseagreen;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.card h4 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.card h5 {
+    margin-top: 0.25rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.card.green {
+    background-color: #97A753;
+}
+
+.card.blue {
+    background-color: #8E8FDE;
+}
+
+.card.red {
+    background-color: #DD7678;
+}
+
+.card-grid {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.spacing {
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.button {
+    display: flex;
+    background-color: rgb(251, 245, 240);
+    padding: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* margin-top: 1.5rem; */
+
+    justify-self: center;
+
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover, .button:focus {
+    background-color: rgba(251, 245, 240, 0.7);
+    transition-duration: 0.3s;
+}
+
+
+
+
+/* --------- MEDIA  --------- */
+@media (width > 28.75rem) {
+    #name-card {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media (width > 36rem) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #name-card h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (width > 50rem) {
+    #name-card h2 {
+        font-size: 4rem;
+    }
+
+    #name-card {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (width > 58rem) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (width > 58rem) {
+    .card-grid {
+        max-width: 80rem;
+        justify-self: center;
+    }
+}
