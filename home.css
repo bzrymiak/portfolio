@@ -9,9 +9,7 @@ h3 {
 /* name title */
 #name-card {
     padding: 2rem;
-    background-image: url(https://i.pinimg.com/736x/c0/e0/94/c0e0947084ee61872c632c4d060e00d9.jpg);
-    background-size: 100% auto;
-    background-position: center;
+    background-color: white;
 }
 
 #name-card h2 {
@@ -33,7 +31,6 @@ h3 {
 }
 
 .card {
-    background-color: darkseagreen;
     padding: 1.5rem;
     padding-bottom: 2.5rem;
 }
@@ -47,18 +44,6 @@ h3 {
     margin-top: 0.25rem;
     font-weight: 400;
     font-size: 0.9rem;
-}
-
-.card.green {
-    background-color: #97A753;
-}
-
-.card.blue {
-    background-color: #8E8FDE;
-}
-
-.card.red {
-    background-color: #DD7678;
 }
 
 .card-grid {
@@ -80,9 +65,10 @@ h3 {
     padding: 0.75rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    /* margin-top: 1.5rem; */
 
     justify-self: center;
+    align-items: center;
+    max-width: max-content;
 
     text-decoration: none;
     color: black;
@@ -94,6 +80,18 @@ h3 {
 }
 
 
+/* --------- FOOTER --------- */
+#contact h3 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+#contact h4 {
+    margin: 0;
+    font-weight: 400;
+}
 
 
 /* --------- MEDIA  --------- */
