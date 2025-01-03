@@ -27,10 +27,46 @@ a {
     background-color: white;
 }
 
+/* center elements */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* add colours */
+.green {
+    background-color: #97A753;
+}
+
+.blue {
+    background-color: #8E8FDE;
+}
+
+.red {
+    background-color: #DD7678;
+}
+
+.yellow {
+    background-color: #F4CA66;
+}
+
+
 
 /* --------- HEADER --------- */
 header, #contact, #projects {
     padding: 2rem;
+}
+
+/* make header fixed */
+header {
+    background-color: #FBF5F0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    width: 100%;
+    justify-content: space-between;
+    overflow: visible;
 }
 
 h1 {
@@ -39,8 +75,9 @@ h1 {
     font-weight: 600;
 }
 
+/* send nav to left + add hover styling */
 nav {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -55,18 +92,25 @@ nav {
 .nav-item:hover, 
 .nav-item:focus,
 .nav-item.active {
-    color: #8E8FDE;
+    color: #A5915F;
 }
+
+/* add spacer */
+.spacer {
+    height: 8.496875rem;
+}
+
 
 
 /* --------- FOOTER --------- */
-#contact h3 {
+#contact h2 {
     text-align: left;
     margin: 0;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-#contact h4 {
+#contact h3 {
     margin: 0;
     font-weight: 400;
 }
@@ -82,11 +126,19 @@ nav {
     grid-row: 2;
 }
 
+address {
+    font-style: normal;
+}
+
+.grid {
+    display: grid;
+}
+
 
 
 
 /* --------- MEDIA  --------- */
-@media (width > 21rem) {
+@media (width > 21.6875rem) {
     #contact h3 {
         margin: 0;
     }
@@ -99,7 +151,12 @@ nav {
         grid-template-rows: max-content 1fr;
         max-width: 24rem;
     }
+
+    .spacer {
+        height: 7.198125rem
+    }
 }
+
 
 @media (width > 37rem) {
     header {
@@ -112,6 +169,10 @@ nav {
         margin: 0;
         display: flex;
         gap: 2rem;
+    }
+
+    .spacer {
+        height: 5.296875rem
     }
 }
 
