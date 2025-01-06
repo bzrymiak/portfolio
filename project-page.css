@@ -5,10 +5,6 @@
     color: black;
     padding: 1rem;
 
-    /* position box to center -> 50% vw - half box width */
-    /* padding-left: calc(50vw - 4rem);
-    padding-right: calc(50vw - 4rem); */
-
     padding-left: calc(50vw - 4.2rem);
     padding-right: calc(50vw - 4.2rem);
 
@@ -240,6 +236,7 @@ h3, .subtitle {
     }
     
 }
+
 
 @media (width > 60rem) {
     .box-grid.project2 {
