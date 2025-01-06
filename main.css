@@ -8,7 +8,7 @@ html {
 
 /* body styling */
 body {
-    font-family: 'IBM Plex Mono';
+    font-family: 'IBM Plex Mono', monospace;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -100,6 +100,11 @@ nav {
     height: 8.496875rem;
 }
 
+/* account for fixed header */
+#project-overview, #objective, #solution, #takeaways {
+    scroll-margin-top: 9.5rem;
+}
+
 
 
 /* --------- FOOTER --------- */
@@ -113,6 +118,7 @@ nav {
 #contact h3 {
     margin: 0;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 #contact p {
@@ -155,6 +161,10 @@ address {
     .spacer {
         height: 7.198125rem
     }
+
+    #project-overview, #objective, #solution, #takeaways {
+        scroll-margin-top: 9rem;
+    }
 }
 
 
@@ -172,7 +182,11 @@ address {
     }
 
     .spacer {
-        height: 5.296875rem
+        height: 5.296875rem;
+    }
+
+    #project-overview, #objective, #solution, #takeaways {
+        scroll-margin-top: 6.5rem;
     }
 }
 
