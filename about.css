@@ -44,6 +44,7 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .button {
@@ -64,6 +65,19 @@ p {
 .button:hover, .button:focus {
     background-color: #75872B;
     transition-duration: 0.3s;
+    color: black;
+}
+
+
+
+.main-text {
+    margin-top: 2.5rem;
+    max-width: 50rem;
+}
+
+.lower-text {
+    margin-top: 1rem;
+    max-width: 50rem;
 }
 
 
