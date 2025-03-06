@@ -16,6 +16,10 @@ body {
     background-color: #FBF5F0;
 }
 
+p {
+    line-height: 1.4rem;
+}
+
 /* link styling */
 a {
     font-style: italic;
@@ -144,6 +148,20 @@ address {
     display: grid;
 }
 
+.caption-container {
+    background-color: #FBF5F0;
+    padding: 1rem;
+}
+
+.caption {
+    background-color: #FBF5F0;
+    color: #362721;
+    /* font-weight: 300; */
+    font-size: 0.9rem;
+
+    margin: 0;
+    max-width: 60rem;
+}
 
 
 
@@ -166,7 +184,7 @@ address {
         height: 7.198125rem
     }
 
-    #project-overview, #objective, #solution, #takeaways {
+    #project-overview, #objective, #outcome, #takeaways {
         scroll-margin-top: 9rem;
     }
 }
@@ -189,7 +207,7 @@ address {
         height: 5.296875rem;
     }
 
-    #project-overview, #objective, #solution, #takeaways {
+    #project-overview, #objective, #outcome, #takeaways {
         scroll-margin-top: 6.5rem;
     }
 }
