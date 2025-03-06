@@ -4,16 +4,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	        <!-- IBM Plex Mono  -->
-	        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	
+        <!-- IBM Plex Mono  -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 		<title>Brooke Zrymiak's Portfolio</title>
-	
-	        <link rel="stylesheet" href="normalize.css">
-	        <link rel="stylesheet" href="main.css">
-	        <link rel="stylesheet" href="project-page.css">
-	        
-	        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/project-page.css">
+        
+        <script src="script.js"></script>
 
 	</head>
 
@@ -24,7 +24,7 @@
             <nav>
                 <a href="index.html" class="nav-item">Home</a>
                 <a href="about.html" class="nav-item">About</a>   
-                <a href="https://drive.google.com/file/d/1FfPuxbCEQhzVHkduYAoTGe5DeOnbyk4F/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
+                <a href="https://drive.google.com/file/d/1ehzMq6WuRMWhuzCsMWfN77GY3fKebunj/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
             </nav>
 		</header>
 
@@ -37,10 +37,13 @@
             <div id="myDropdown" class="dropdown-content">
                 <a href="#project-overview">01. Project Overview</a>
                 <a href="#objective">02. Objective</a>
-                <a href="#solution">03. Solution</a>
+                <a href="#outcome">03. Outcome</a>
                 <a href="#takeaways">04. Takeaways</a>
             </div>
         </div>
+
+        <!-- account for fixed dropdown space -->
+        <div class="dropdown-spacer"></div>
 
         <section id="main" class="white-bg">
             <div class="grid main-grid">
@@ -48,26 +51,32 @@
                     <div class="left-nav links white-bg">
                         <p>01. <a href="#project-overview">Project Overview</a></p>
                         <p>02. <a href="#objective">Objective</a></p>
-                        <p>03. <a href="#solution">Solution</a></p>
+                        <p>03. <a href="#outcome">Outcome</a></p>
                         <p>04. <a href="#takeaways">Takeaways</a></p>
                     </div>
 
                 
                 <div class="right top">
-                    <p class="subtitle">Web development / 2024</p>
+                    <p class="subtitle">web development & design | 2024</p>
                     <h2>Project Funding Website</h2>
                 </div>
 
                 <div class="right bottom">
-                    <div class="img-container">
-                      <img src="https://i.pinimg.com/736x/19/ff/ad/19ffad511a3566f228fcd5b898a355e6.jpg" width="200" height="200" alt="Row of houses">
+                    <div>
+                        <div class="img-container">
+                        <img src="media/Responsiveness.gif" width="1808" height="1017" alt="GIF demonstrating the responsiveness of the webpage between mobile and desktop.">
+                        </div>
+
+                        <div class="caption-container">
+                            <p class="caption">The responsiveness of the webpage between 330px to 1750px.</p>
+                        </div>
                     </div>
-                    
+
                     <!-- mini info grid -->
                     <div class="box-grid project2">
                         <div class="box green">
                             <h3>Tools</h3>
-                            <p>HTML/CSS, Figma, VSCode</p>
+                            <p>HTML/CSS, Figma</p>
                         </div>
 
                         <div class="box red">
@@ -92,27 +101,29 @@
                     </div>
 
                     <section id="project-overview">
-                        <h3>01. Project Overview</h3>
-                        <h4>Creating a website</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>01.</h3>
+                        <h4>Project Overview</h4>
+                        <p>Sustainable Project Funding Opportunities is a subsection of Embark Sustainability's larger website. Using 6 rows of data from a large funding/award/program application spreadsheet, my team organized this information to create an easily-navigated resource site.</p>
                     </section>
 
                     <section id="objective">
-                        <h3>02. Objective</h3>
-                        <h4>Creating a website</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>02.</h3>
+                        <h4>Objective</h4>
+                        <p>Our team created this website to organize a large spreadsheet of grants in a way that was more user-friendly, rather than a 20-columned document. We based our design around Embark Sustainability's branding to allow for our project to blend seamlessly when inserted into their existing website. It was also important for our website to be accessible for all users, which includes being responsive to screen widths between 320px and 1920px, in addition to being adaptable to screen-readers and keyboard navigation.</p>
                     </section>
 
-                    <section id="solution">
-                        <h3>03. Solution</h3>
-                        <h4>Creating a website</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <section id="outcome">
+                        <h3>03.</h3>
+                        <h4>Outcome</h4>
+                        <p>Our team's design centered around simplifying our site's navigation. For this reason, we decided to implement a breadcrumb navigation (in addition to our main header navigation) to help orient the user, as well as using an information hierarchy for users to easily search for funding opportunities that are relevant to them. Due to the amount of content on the site, we divided the information with a split coloured background to help the user identify the main interactive elements, which almost always land on the beige background. More than anything, this project tested our adaptability, especially since we had to create solutions without JavaScript.</p>
+
+                        <p>Our final design is cohesive and uses a simplistic style to counter the amount of information on the website. The colour division is especially helpful in guiding the user towards the most important information, like the grant cards and the individual grant requirements. The consistency in our site makes it pleasant for users to navigate and easy for them to predict where information will appear on each page.</p>
                     </section>
 
                     <section id="takeaways">
-                        <h3>04. Takeaways</h3>
-                        <h4>Creating a website</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>04.</h3>
+                        <h4>Takeaways</h4>
+                        <p>This project taught me a lot about accessibility within web development, and the importance of designing with a varied audience in mind. Testing was our most crucial task for this project, which included testing screen readers, keyboard navigation, responsiveness, and even how the site operated on different web browsers.</p>
                     </section>
                 </div>
 
@@ -121,8 +132,8 @@
             </div>
         </section>
         
-
-        </section>
+        <p class="bottom-nav center white-bg">☜ <a href="/index.html">Home</a> / <a href="/pestilence.html">Next project</a> ☞</p>
+      
 
         <section id="contact">
             <div class="contact-grid">
@@ -133,7 +144,7 @@
                     <p>bnsz@shaw.ca</p>
 
                     <h3>connect with me on Linkedin</h3>
-                    <p>in/brookezrymiak</p>
+                    <p>in/<a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank">brookezrymiak</a></p>
                 </address>
             </div>
         </section>
