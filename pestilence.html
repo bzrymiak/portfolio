@@ -9,9 +9,9 @@
 
 		<title>Brooke Zrymiak's Portfolio</title>
 
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="project-page.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/project-page.css">
         
         <script src="script.js"></script>
 
@@ -24,7 +24,7 @@
             <nav>
                 <a href="index.html" class="nav-item">Home</a>
                 <a href="about.html" class="nav-item">About</a>   
-                <a href="https://drive.google.com/file/d/1FfPuxbCEQhzVHkduYAoTGe5DeOnbyk4F/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
+                <a href="https://drive.google.com/file/d/1ehzMq6WuRMWhuzCsMWfN77GY3fKebunj/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
             </nav>
 		</header>
 
@@ -37,7 +37,7 @@
             <div id="myDropdown" class="dropdown-content">
                 <a href="#project-overview">01. Project Overview</a>
                 <a href="#objective">02. Objective</a>
-                <a href="#solution">03. Solution</a>
+                <a href="#outcome">03. Outcome</a>
                 <a href="#takeaways">04. Takeaways</a>
             </div>
         </div>
@@ -48,19 +48,28 @@
                     <div class="left-nav links white-bg">
                         <p>01. <a href="#project-overview">Project Overview</a></p>
                         <p>02. <a href="#objective">Objective</a></p>
-                        <p>03. <a href="#solution">Solution</a></p>
+                        <p>03. <a href="#outcome">Outcome</a></p>
                         <p>04. <a href="#takeaways">Takeaways</a></p>
                     </div>
 
                 
                 <div class="right top">
-                    <p class="subtitle">2D game development / 2024</p>
+                    <p class="subtitle">2D game development | 2024</p>
                     <h2>Pestilence</h2>
                 </div>
 
                 <div class="right bottom">
-                    <div class="img-container">
-                        <img src="https://i.pinimg.com/736x/19/ff/ad/19ffad511a3566f228fcd5b898a355e6.jpg" width="200" height="200" alt="Row of houses">
+                    <div>
+                        <div class="img-container">
+                            <!-- <img src="start-room.png" width="1146" height="1148" alt="The starting area of Pestilence, featuring the player, an enemy blocking a gate, and several trees."> -->
+                             <video width="1280" height="720" controls autoplay muted>
+                                <source src="media/Gameplay.mp4" type="video/mp4" alt="Gameplay featuring the player navigating the main area and collecting tokens.">
+                             </video>
+                        </div>
+
+                        <div class="caption-container">
+                            <p class="caption">Brief gameplay featuring the player in the main room collecting tokens.</p>
+                        </div>
                     </div>
 
                     <!-- mini info grid -->
@@ -87,37 +96,40 @@
                     </div>
 
                     <section id="project-overview">
-                        <h3>01. Project Overview</h3>
-                        <h4>Creating a game</h4>
-                        <p>Pestilence is a 2D tile-based action adventure game programmed entirely with P5JS. The player controls a knight-like character who must collect tokens and defeat enemies in order to cure a village of its plague. The player must explore several unique areas of the map, which include a monster-filled maze and the old village itself.</p>
+                        <h3>01.</h3>
+                        <h4>Project Overview</h4>
+                        <p>Pestilence is a 2D retro-style tile-based action adventure game that revolves around a plagued town, which the player must save by collecting three stars hidden around the map. The player must solve the maze, collect 50 coins, and defeat 20 enemies in order to collect all the stars and unlock a special area, wherein the stars fall into place on the ground and the screen fades to white, completing a ritual and saving the town from its disease. <a href="https://editor.p5js.org/bzrymiak/full/LsRLSwip8" target="_blank">Play it for yourself</a>!</p>
                     </section>
 
                     <section id="objective">
-                        <h3>02. Objective</h3>
-                        <h4>Creating a game</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>02.</h3>
+                        <h4>Objective</h4>
+                        <p>My goal for this project was to create something that I would enjoy playing, which is where I drew inspiration from games like Hollow Knight and Stardew Valley. More than anything, I was set on this game having multiple distinct areas to explore and somewhat of a story for the player to piece together. </p>
                     </section>
 
-                    <section id="solution">
-                        <h3>03. Solution</h3>
-                        <h4>Creating a game</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <section id="outcome">
+                        <h3>03.</h3>
+                        <h4>Outcome</h4>
+                        <p>For this project, I had clear ambitions for an explorable adventure game with assets that I would make myself. To achieve this, I had to manage my time effectively to balance the programming and art creation of the game, both of which were unexpectedly time consuming due to my inexperience. For this reason, I ended up having to scale back my gameplay ideas significantly.</p>
+
+                        <p>As an end result, Pestilence has 4 unique areas with their own events and features, including a maze and final room that blends into a cutscene. To reach most areas, the player will need to collect keys in order to unlock gates, however the final room is locked until the moment the player collects 3 stars that are hidden around the map. One star is collected by defeating a certain number of enemies, some of which will fly towards the player if they enter their line of sight.</p>
                     </section>
 
                     <section id="takeaways">
-                        <h3>04. Takeaways</h3>
-                        <h4>Creating a game</h4>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h3>04.</h3>
+                        <h4>Takeaways</h4>
+                        <p>My biggest lesson learned from this project was to perform regular user testing. I became blind to the routine of the game as I played it, and having fresh eyes to play through it illuminated a lot when it came to difficulty, accessibility, and general user enjoyment. In the future, I plan on emphasizing accessibility from the start in order to avoid issues I encountered with how the game and its story were understood by players.</p>
                     </section>
                 </div>
 
                     
                 
             </div>
-        </section>
-        
 
         </section>
+        
+        <p class="bottom-nav center white-bg">☜ <a href="index.html">Home</a> / <a href="funding-website.html">Next project</a> ☞</p>
+
 
         <section id="contact">
             <div class="contact-grid">
@@ -128,7 +140,7 @@
                     <p>bnsz@shaw.ca</p>
 
                     <h3>connect with me on Linkedin</h3>
-                    <p>in/brookezrymiak</p>
+                    <p>in/<a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank">brookezrymiak</a></p>
                 </address>
             </div>
         </section>
