@@ -64,7 +64,7 @@ header {
 }
 
 
-/* INFO BOXES */
+/* ----- INFO BOXES ----- */
 .box {
     padding: 1rem;
 }
@@ -85,7 +85,7 @@ header {
 
 
 
-/* MAIN SECTION */
+/* ----- MAIN SECTION ----- */
 section {
     margin-bottom: 3rem;
 }
@@ -186,6 +186,19 @@ h3, .subtitle {
 }
 
 
+.image-grid {
+    display: grid;
+    gap: 1rem;
+    max-width: 50rem;
+}
+
+.image-grid p {
+    margin-top: 0;
+}
+
+.main-img-container {
+    max-width: 30rem;
+}
 
 
 /* --------- MEDIA  --------- */
@@ -265,6 +278,11 @@ h3, .subtitle {
     
 }
 
+@media (width > 55rem) {
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (width > 60rem) {
     .box-grid.project2 {
