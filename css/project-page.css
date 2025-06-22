@@ -120,6 +120,15 @@ video {
     background-color: rgba(0,0,0,0.9);
 }
 
+.vid-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+}
+
 #main h2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -127,6 +136,7 @@ video {
 }
 
 h3, .subtitle {
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9rem;
     margin: 0;
     font-weight: normal;
@@ -154,7 +164,9 @@ h3, .subtitle {
     display: none;
 }
 
-.left-nav a {
+.left-nav a,
+.left-nav p {
+    font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     text-decoration: none;
     color: black;
@@ -176,11 +188,11 @@ h3, .subtitle {
     /* padding-top: 1rem; */
     padding-bottom: 3rem;
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .bottom-nav a {
-    font-family: 'IBM Plex Mono', monospace;;
+    font-family: 'IBM Plex Mono', monospace;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -192,14 +204,30 @@ h3, .subtitle {
     max-width: 50rem;
 }
 
-.image-grid p {
-    margin-top: 0;
+.euo-sketch-grid {
+    display: grid;
+    gap: 1rem;
+    max-width: 50rem;
 }
+
+.euo-img-container {
+    height: 100%;
+    max-width: 50rem;
+}
+
+.fill-width {
+    max-width: 50rem;
+}
+
 
 .main-img-container {
     max-width: 30rem;
+    max-height: 50rem;
 }
 
+p {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
 
 /* --------- MEDIA  --------- */
 @media (width > 21rem) {
@@ -301,6 +329,10 @@ h3, .subtitle {
      /* handle box grid */
      .box-grid.project1 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .euo-sketch-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
