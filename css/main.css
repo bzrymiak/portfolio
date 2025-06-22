@@ -17,7 +17,12 @@ body {
 }
 
 p {
+    font-family: Helvetica Neue, Arial, sans-serif;
     line-height: 1.4rem;
+}
+
+.mono {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 /* link styling */
@@ -81,6 +86,20 @@ h1 {
     margin: 0;
     font-size: 1.13rem;
     font-weight: 600;
+}
+
+.nav-name {
+    margin: 0;
+    font-size: 1.13rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+
+.nav-name:hover, 
+.nav-name:focus {
+    color: #826f3f;
 }
 
 /* send nav to left + add hover styling */
@@ -156,7 +175,7 @@ address {
 .caption {
     background-color: #FBF5F0;
     color: #362721;
-    /* font-weight: 300; */
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9rem;
 
     margin: 0;
@@ -174,7 +193,7 @@ address {
     .contact-grid {
         display: grid;
         column-gap: 1rem;
-        row-gap: 0;
+        row-gap: 0rem;
         grid-template-columns: max-content 1fr;
         grid-template-rows: max-content 1fr;
         max-width: 24rem;
