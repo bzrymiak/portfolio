@@ -12,6 +12,7 @@ h3 {
 }
 
 #name-header p {
+    font-family: 'IBM Plex Mono', monospace;
     margin: 0;
 }
 
@@ -79,6 +80,10 @@ h3 {
     font-size: 0.9rem;
 }
 
+.card p {
+    margin-bottom: 1.75rem;
+}
+
 .card-grid {
     display: grid;
     row-gap: 1rem;
@@ -89,7 +94,6 @@ h3 {
     display: grid;
     grid-template-rows: 1fr max-content;
     position: relative;
-    gap: 0.5rem;
 }
 
 .button {
@@ -149,8 +153,9 @@ h3 {
     }
 }
 
-/* @media (width > 58rem) {
+@media (width > 58rem) {
     .card-grid {
         grid-template-columns: 1fr 1fr 1fr;
+         max-width: 100rem;
     }
-} */
+}
