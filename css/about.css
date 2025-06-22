@@ -35,8 +35,17 @@ p {
     margin-top: 1rem;
 }
 
+#main {
+    padding: 2rem;
+    padding-top: 0rem;
+}
+
 #name-header {
     padding: 2rem;
+}
+
+#name-header p {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 /* button styling */
@@ -68,14 +77,7 @@ p {
     color: black;
 }
 
-
-
-.main-text {
-    margin-top: 2.5rem;
-    max-width: 50rem;
-}
-
-.lower-text {
+p {
     margin-top: 1rem;
     max-width: 50rem;
 }
