@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- IBM Plex Mono  -->
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+		<title>Brooke Zrymiak's Portfolio</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/project-page.css">
+        
+        <script src="script.js"></script>
+
+	</head>
+
+    <body>
+        <header>
+            <a href="index.html" class="nav-name">Brooke Zrymiak's Portfolio</a>
+
+            <nav>
+                <a href="about.html" class="nav-item">About</a>  
+                <a href="artwork.html" class="nav-item">Artwork</a> 
+                <a href="https://drive.google.com/file/d/1CdD2zYs8JmAT6qsnQ0WajTWsGvzDj7mV/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
+            </nav>
+		</header>
+
+        <!-- account for fixed header space -->
+        <div class="spacer"></div>
+
+        <!-- dropdown code from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+        <div class="dropdown stick">
+            <button onclick="myFunction()" class="dropbtn">↓ Navigation ↓</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#project-overview">01. Project Overview</a>
+                <a href="#objective">02. Objective</a>
+                <a href="#outcome">03. Outcome</a>
+                <a href="#takeaways">04. Takeaways</a>
+            </div>
+        </div>
+
+        <section id="main" class="white-bg">
+            <div class="grid main-grid">
+                    <h3 class="left-nav nav-heading">Navigation</h3>
+                    <div class="left-nav links white-bg">
+                        <p>01. <a href="#project-overview">Project Overview</a></p>
+                        <p>02. <a href="#objective">Objective</a></p>
+                        <p>03. <a href="#outcome">Outcome</a></p>
+                        <p>04. <a href="#takeaways">Takeaways</a></p>
+                    </div>
+
+                
+                <div class="right top">
+                    <p class="subtitle">ui/ux, speculative design | 2025</p>
+                    <h2>Euodia</h2>
+                </div>
+
+                <div class="right bottom">
+                    <div>
+                        <div class="vid-container">
+                             <video width="1920" height="1080" controls autoplay muted>
+                                <source src="media/euodiaStart.mp4" type="video/mp4" alt="The watch and hologram interfaces loading in the main page, which displays date, time, and navigation buttons.">
+                             </video>
+                        </div>
+
+                        <div class="caption-container">
+                            <p class="caption">Euodia's home page loading in.</p>
+                        </div>
+                    </div>
+
+                    <!-- mini info grid -->
+                    <div class="box-grid project2">
+                        <div class="box green">
+                            <h3>Tools</h3>
+                            <p>Figma, DaVinci Resolve</p>
+                        </div>
+
+                        <div class="box red">
+                            <h3>My role</h3>
+                            <p>UI/UX, mock-ups, video editing</p>
+                        </div>
+                        
+                        <div class="box blue">
+                            <h3>Timeframe</h3>
+                            <p>2 weeks</p>
+                        </div>
+
+                        <div class="box yellow">
+                            <h3>Created for</h3>
+                            <p>SparkJam</p>
+                        </div>
+
+                        <div class="box green">
+                            <h3>Team</h3>
+                            <p>Emily Quan, Kelly Nguyen, Bianca Dimaano</p>
+                        </div>
+                    </div>
+
+                    <section id="project-overview">
+                        <h3>01.</h3>
+                        <h4>Project Overview</h4>
+                        <p>Euodia ("prosperous journey") is a futuristic survival watch designed in the year 2132 to help users survive a zombie apocalypse, brought on by an alien disease. The watch is equipped a hologram projector which allows the product itself to stay compact and a health scanner for users to notice increased susceptibility.</p> 
+                        
+                        <p>Euodia envisions a possible future where humans will have to fight against an even more devastating global pandemic. Designed with survival in mind, information is as concise as possible and often uses a larger font size for clear legibility, helping its users navigate the map, information database, health scanner, and trading network. The full project walkthrough can be viewed on <a href="https://youtu.be/Y9Xr2kVliIU" target="_blank"> YouTube</a>.</p>
+                    </section>
+
+                    <section id="objective">
+                        <h3>02.</h3>
+                        <h4>Objective</h4>
+                        <p>Designed for SparkJam's "envision the future" track, the goal for this project was to create a product that would help users survive a zombie apocalypse. Our team decided to work with a smartwatch, since it seemed like a hard-to-lose piece of technology when users are running or fighting, as well as being an interesting design challenge. To avoid overloading the watch with information, we decided to embrace speculative design and envision a smartwatch with futuristic technology, like the hologram projector. </p>
+
+                        <!-- map sketches -->
+                        <div class="euo-sketch-grid"> 
+                            <div class="main-img-container">
+                                <div class="img-container">
+                                <img src="media/initMap.png" width="2360" height="1640" alt="A collection of wireframes for each page to test both watch and hologram layouts.">
+                                </div>
+        
+                                <div class="caption-container">
+                                    <p class="caption">An initial plan for watch and hologram wireframes.</p>
+                                </div>
+                            </div>
+
+                            <div class="main-img-container">
+                                <div class="img-container">
+                                <img src="media/watchMap.jpeg" width="1801" height="1361" alt="Wireframe sketches detailing how the watch would work without the hologram.">
+                                </div>
+        
+                                <div class="caption-container">
+                                    <p class="caption">UI sketches for the watch, ensuring that everything is functional without the hologram engaged.</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+
+                    <section id="outcome">
+                        <h3>03.</h3>
+                        <h4>Outcome</h4>
+                        <p>Our team evenly split the work between designing each of the four sections, leaving me to work on the infected database. The database is reliant on our world-building, which pushed me to develop a complete story that would not only help ground our hypothetical future, but also the design itself. Having a clear story helped guide the features more clearly, leading to a huge increase in understanding how the watch worked, which allowed us to fix accessibility issues by adding button shortcuts on the sides of the watch for rapid navigation, among other things.</p>
+                        
+                        <p>Having realized that most of our designs were reliant on the hologram (which is an optional feature), my role shifted to working on the user experience for the watch, which included establishing simple navigation, simplifying the watch interfaces, and ensuring that the watch was completely usable without the hologram. This resulted in a complete survival-guide product that would realistically benefit survivors in a zombie apocalypse.</p>
+
+                        <p>While the rest of the team finished up our prototyping and prepared for our presentation, I scripted, voiced, and edited our team's pitch video in DaVinci Resolve.</p>
+
+                        <div class="euo-sketch-grid"> 
+                            <div class="main-img-container">
+                                <div class="img-container">
+                                <img src="media/initDatabase.png" width="2268" height="1468" alt="A dark page with information on the left and boxes where an image of each zombie phase would be on the right.">
+                                </div>
+        
+                                <div class="caption-container">
+                                    <p class="caption">An early mock-up of the infected database for the hologram.</p>
+                                </div>
+                            </div>
+
+                            <div class="main-img-container">
+                                <div class="img-container">
+                                <img src="media/futureDatabase.png" width="1842" height="1158" alt="A futuristic-looking version of the database with hologram and watch versions.">
+                                </div>
+        
+                                <div class="caption-container">
+                                    <p class="caption">The foundation of the final database design for the hologram and watch.</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+
+                    <section id="takeaways">
+                        <h3>04.</h3>
+                        <h4>Takeaways</h4>
+                        <p>My biggest lesson learned from this project was to consider different use cases and different user personas at every step of the way. A key oversight we initially missed was that users would likely use the watch while in a crisis, meaning we should make things as clear and concise as possible. In the future, I would research personas and use cases at the very beginning of the process.</p>
+
+                        <!-- final function -->
+                        <div> 
+                            <div class="fill-width">
+                                <div class="euo-img-container">
+                                    <img src="media/allPages.png" width="1780" height="1780" alt="A grid of the four main sections of the watch, shown with the finished watch and hologram UI.">
+                                </div>
+        
+                                <div class="caption-container">
+                                    <p class="caption">From left to right, top to bottom: the map, the alien infected database, the health scanner, the trade network.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </section>
+                </div>
+
+            </div>
+        </section>
+        
+        <p class="bottom-nav center white-bg">☜ <a href="index.html">Home</a> ❊ <a href="pestilence.html">Next project</a> ☞</p>
+
+
+        <section id="contact">
+            <div class="contact-grid">
+                <h2>Contact</h2>
+
+                <address class="contact-info">
+                    <h3>get in touch!</h3>
+                    <p>bza78@sfu.ca</p>
+
+                    <h3>connect with me on Linkedin</h3>
+                    <p>in/<a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank">brookezrymiak</a></p>
+                </address>
+            </div>
+        </section>
+    </body>
+</html>
