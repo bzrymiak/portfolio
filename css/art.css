@@ -1,0 +1,108 @@
+/* subheadings */
+h2 {
+    margin: 2rem;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nav-name {
+    margin: 0;
+    font-size: 1.13rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+
+.nav-name:hover, 
+.nav-name:focus {
+    color: #826f3f;
+}
+
+
+
+/* project card */
+#main {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.card h4 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.card h5 {
+    margin-top: 0.25rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    /* max-height: 35rem; */
+}
+
+.card-grid {
+    display: grid;
+    column-gap: 1rem;
+}
+
+
+/* --------- FOOTER --------- */
+#contact h3 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#contact h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+
+
+/* --------- MEDIA  --------- */
+
+@media (width > 36rem) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 50rem;
+        justify-self: center;
+    }
+}
+
+@media (width > 37.25rem) {
+    .name {
+        font-size: 5rem;
+    }
+}
+
+@media (width > 58rem) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100rem;
+    }
+
+    #main {
+        padding: 3.5rem;
+    }
+}
