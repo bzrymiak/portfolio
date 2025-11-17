@@ -38,7 +38,11 @@ h2 {
 .card {
     padding: 1.5rem;
     padding-bottom: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
+
 
 .card h4 {
     margin-bottom: 0;
