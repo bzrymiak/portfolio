@@ -92,6 +92,10 @@ p {
   flex-direction: column;
 }
 
+.lower-text {
+  width: 100%;
+}
+
 /* --------- MEDIA  --------- */
 @media (width > 37.25rem) {
   .name {
