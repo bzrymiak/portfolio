@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- IBM Plex Mono  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Brooke Zrymiak's Portfolio</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/project-page.css" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="nav-name">Brooke Zrymiak's Portfolio</a>
+
+      <nav>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="artwork.html" class="nav-item">Artwork</a>
+        <a
+          href="https://drive.google.com/file/d/1WuZ6gq9danx2EguoiS93TmVJU9vZda27/view?usp=sharing"
+          target="_blank"
+          class="nav-item"
+          >Resume</a
+        >
+      </nav>
+    </header>
+
+    <!-- account for fixed header space -->
+    <div class="spacer"></div>
+
+    <!-- dropdown code from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <div class="dropdown stick">
+      <button onclick="myFunction()" class="dropbtn">↓ Navigation ↓</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#project-overview">01. Project Overview</a>
+        <a href="#objective">02. Objective</a>
+        <a href="#outcome">03. Outcome</a>
+        <a href="#takeaways">04. Takeaways</a>
+      </div>
+    </div>
+
+    <section id="main" class="white-bg">
+      <div class="grid main-grid">
+        <h3 class="left-nav nav-heading">Navigation</h3>
+        <div class="left-nav links white-bg">
+          <p>01. <a href="#project-overview">Project Overview</a></p>
+          <p>02. <a href="#objective">Objective</a></p>
+          <p>03. <a href="#outcome">Outcome</a></p>
+          <p>04. <a href="#takeaways">Takeaways</a></p>
+        </div>
+
+        <div class="right top">
+          <p class="subtitle">ui/ux | 2026</p>
+          <h2>Discord Spaces</h2>
+        </div>
+
+        <div class="right bottom">
+          <div>
+            <div class="vid-container">
+              <video width="1280" height="720" loop autoplay muted>
+                <source
+                  src="media/spaces.mp4"
+                  type="video/mp4"
+                  alt="Illustrating the features of the Figma prototype"
+                />
+              </video>
+            </div>
+
+            <div class="caption-container">
+              <p class="caption">The features of the Figma prototype</p>
+            </div>
+          </div>
+
+          <!-- mini info grid -->
+          <div class="box-grid project2">
+            <div class="box green">
+              <h3>Tools</h3>
+              <p>Figma</p>
+            </div>
+
+            <div class="box red">
+              <h3>My role</h3>
+              <p>UI/UX, prototyping</p>
+            </div>
+
+            <div class="box blue">
+              <h3>Timeframe</h3>
+              <p>5 days</p>
+            </div>
+
+            <div class="box yellow">
+              <h3>Created for</h3>
+              <p>SparkJam 2026</p>
+            </div>
+
+            <div class="box green">
+              <h3>Team</h3>
+              <p>Bianca Dimaano, Emily Quan, Aubrey Ventura</p>
+            </div>
+          </div>
+
+          <section id="project-overview">
+            <h3>01.</h3>
+            <h4>Project Overview</h4>
+            <p>
+              For SparkJam 2026, a 5-day design sprint hosted by SFU Surge, my
+              team and I decide to build on discord following the prompt “add an
+              creation-based feature to a non-creation software,” meaning that
+              we would need to find a way to create an interesting and
+              meaningful customization-based addition to Discord that
+              simultaneously felt native to the software.
+            </p>
+
+            <p>
+              Our pitch video can be viewed on
+              <a href="https://youtu.be/-AfB8-rDJQs" target="_blank">
+                YouTube</a
+              >
+              and our full prototype on
+              <a
+                href="https://www.figma.com/proto/DwDdftvleFp4Hf0FxO6Zzx/Discord-Spaces?node-id=1056-162883&page-id=283%3A50106&starting-point-node-id=1056%3A166974&t=9KuTDMJbkdAXFEQ4-1"
+                target="_blank"
+                >Figma</a
+              >.
+            </p>
+          </section>
+
+          <section id="objective">
+            <h3>02.</h3>
+            <h4>Objective</h4>
+            <p>
+              *** This case study is still in progress! Check back later or
+              reach out for more information! ***
+            </p>
+
+            <!-- map sketches -->
+            <!-- <div class="euo-sketch-grid">
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/initMap.png"
+                    width="2360"
+                    height="1640"
+                    alt="A collection of wireframes for each page to test both watch and hologram layouts."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    An initial plan for watch and hologram wireframes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/watchMap.jpeg"
+                    width="1801"
+                    height="1361"
+                    alt="Wireframe sketches detailing how the watch would work without the hologram."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    UI sketches for the watch, ensuring that everything is
+                    functional without the hologram engaged.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </section>
+
+          <section id="outcome">
+            <h3>03.</h3>
+            <h4>Outcome</h4>
+            <p></p>
+
+            <!-- <div class="euo-sketch-grid">
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/initDatabase.png"
+                    width="2268"
+                    height="1468"
+                    alt="A dark page with information on the left and boxes where an image of each zombie phase would be on the right."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    An early mock-up of the infected database for the hologram.
+                  </p>
+                </div>
+              </div>
+
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/futureDatabase.png"
+                    width="1842"
+                    height="1158"
+                    alt="A futuristic-looking version of the database with hologram and watch versions."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    The foundation of the final database design for the hologram
+                    and watch.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </section>
+
+          <section id="takeaways">
+            <h3>04.</h3>
+            <h4>Takeaways</h4>
+            <p></p>
+
+            <!-- final function -->
+            <!-- <div>
+              <div class="fill-width">
+                <div class="euo-img-container">
+                  <img
+                    src="media/allPages.png"
+                    width="1780"
+                    height="1780"
+                    alt="A grid of the four main sections of the watch, shown with the finished watch and hologram UI."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    From left to right, top to bottom: the map, the alien
+                    infected database, the health scanner, the trade network.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <p class="bottom-nav center white-bg">
+      ☜ <a href="index.html">Home</a> ❊
+      <a href="pestilence.html">Next project</a> ☞
+    </p>
+
+    <section id="contact">
+      <div class="main-info">
+        <h2>Brooke Zrymiak</h2>
+
+        <address class="contact-info">
+          <p>
+            Get in touch!
+            <a href="mailto:zrymiak.b@gmail.com">zrymiak.b@gmail.com</a>
+          </p>
+
+          <p>
+            Connect with me on
+            <a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank"
+              >Linkedin ➚</a
+            >
+          </p>
+        </address>
+      </div>
+      <p class="disclaimer">
+        This site is in the process of being updated. Reach out for the best and
+        most updated information!
+      </p>
+    </section>
+  </body>
+</html>

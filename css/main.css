@@ -95,7 +95,7 @@ h1 {
 
 .nav-name {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   font-style: normal;
@@ -119,6 +119,7 @@ nav {
   font-style: normal;
   text-decoration: none;
   color: black;
+  font-size: 0.9rem;
 }
 
 .nav-item:hover,
@@ -129,7 +130,7 @@ nav {
 
 /* add spacer */
 .spacer {
-  height: 8.496875rem;
+  height: 7.195625rem;
 }
 
 /* account for fixed header */
@@ -141,29 +142,56 @@ nav {
 }
 
 /* --------- FOOTER --------- */
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
 #contact h2 {
   text-align: left;
   margin: 0;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #contact h3 {
   margin: 0;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 #contact p {
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+  margin: 0;
+  font-weight: 400;
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#contact a {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+#contact a:hover,
+#contact a:focus,
+#contact a:active {
+  font-style: italic;
+  color: #3950e5;
 }
 
 .contact-info {
-  grid-column: 2;
-  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer {
+  font-style: italic;
+  color: #3950e5;
+  font-size: 0.8rem;
 }
 
 address {
@@ -230,7 +258,7 @@ address {
   }
 
   .spacer {
-    height: 5.296875rem;
+    height: 5.035rem;
   }
 
   #project-overview,
@@ -238,6 +266,11 @@ address {
   #outcome,
   #takeaways {
     scroll-margin-top: 6.5rem;
+  }
+
+  .main-info {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

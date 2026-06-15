@@ -1,198 +1,295 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- IBM Plex Mono  -->
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- IBM Plex Mono  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-		<title>Brooke Zrymiak's Portfolio</title>
+    <title>Brooke Zrymiak's Portfolio</title>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/project-page.css">
-        
-        <script src="script.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/project-page.css" />
 
-	</head>
+    <script src="script.js"></script>
+  </head>
 
-    <body>
-        <header>
-            <a href="index.html" class="nav-name">Brooke Zrymiak's Portfolio</a>
+  <body>
+    <header>
+      <a href="index.html" class="nav-name">Brooke Zrymiak's Portfolio</a>
 
-            <nav>
-                <a href="about.html" class="nav-item">About</a>  
-                <a href="artwork.html" class="nav-item">Artwork</a> 
-                <a href="https://drive.google.com/file/d/1AsGIYdPxm44uEZJf6WHbnRQmcsEcjbXB/view?usp=sharing" target="_blank" class="nav-item">Resume</a>   
-            </nav>
-		</header>
+      <nav>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="artwork.html" class="nav-item">Artwork</a>
+        <a
+          href="https://drive.google.com/file/d/1WuZ6gq9danx2EguoiS93TmVJU9vZda27/view?usp=sharing"
+          target="_blank"
+          class="nav-item"
+          >Resume</a
+        >
+      </nav>
+    </header>
 
-        <!-- account for fixed header space -->
-        <div class="spacer"></div>
+    <!-- account for fixed header space -->
+    <div class="spacer"></div>
 
-        <!-- dropdown code from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
-        <div class="dropdown stick">
-            <button onclick="myFunction()" class="dropbtn">↓ Navigation ↓</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#project-overview">01. Project Overview</a>
-                <a href="#objective">02. Objective</a>
-                <a href="#outcome">03. Outcome</a>
-                <a href="#takeaways">04. Takeaways</a>
-            </div>
+    <!-- dropdown code from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+    <div class="dropdown stick">
+      <button onclick="myFunction()" class="dropbtn">↓ Navigation ↓</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#project-overview">01. Project Overview</a>
+        <a href="#objective">02. Objective</a>
+        <a href="#outcome">03. Outcome</a>
+        <a href="#takeaways">04. Takeaways</a>
+      </div>
+    </div>
+
+    <section id="main" class="white-bg">
+      <div class="grid main-grid">
+        <h3 class="left-nav nav-heading">Navigation</h3>
+        <div class="left-nav links white-bg">
+          <p>01. <a href="#project-overview">Project Overview</a></p>
+          <p>02. <a href="#objective">Objective</a></p>
+          <p>03. <a href="#outcome">Outcome</a></p>
+          <p>04. <a href="#takeaways">Takeaways</a></p>
         </div>
 
-        <section id="main" class="white-bg">
-            <div class="grid main-grid">
-                    <h3 class="left-nav nav-heading">Navigation</h3>
-                    <div class="left-nav links white-bg">
-                        <p>01. <a href="#project-overview">Project Overview</a></p>
-                        <p>02. <a href="#objective">Objective</a></p>
-                        <p>03. <a href="#outcome">Outcome</a></p>
-                        <p>04. <a href="#takeaways">Takeaways</a></p>
-                    </div>
+        <div class="right top">
+          <p class="subtitle">2D game development | 2024</p>
+          <h2>Pestilence</h2>
+        </div>
 
-                
-                <div class="right top">
-                    <p class="subtitle">2D game development | 2024</p>
-                    <h2>Pestilence</h2>
-                </div>
-
-                <div class="right bottom">
-                    <div>
-                        <div class="vid-container">
-                             <video width="1280" height="720" controls autoplay muted>
-                                <source src="media/Gameplay.mp4" type="video/mp4" alt="Gameplay featuring the player navigating the main area and collecting tokens.">
-                             </video>
-                        </div>
-
-                        <div class="caption-container">
-                            <p class="caption">Brief gameplay featuring the player in the village area collecting tokens.</p>
-                        </div>
-                    </div>
-
-                    <!-- mini info grid -->
-                    <div class="box-grid project2">
-                        <div class="box green">
-                            <h3>Tools</h3>
-                            <p>JavaScript, p5.js, Procreate</p>
-                        </div>
-
-                        <div class="box red">
-                            <h3>My role</h3>
-                            <p>Programming, illustration, story</p>
-                        </div>
-                        
-                        <div class="box blue">
-                            <h3>Timeframe</h3>
-                            <p>4 weeks</p>
-                        </div>
-
-                        <div class="box yellow">
-                            <h3>Created for</h3>
-                            <p>Digital Games (IAT 167)</p>
-                        </div>
-
-                        <div class="box green">
-                            <h3>Team</h3>
-                            <p>N/A</p>
-                        </div>
-                    </div>
-
-                    <section id="project-overview">
-                        <h3>01.</h3>
-                        <h4>Project Overview</h4>
-                        <p>Pestilence is a 2D retro-style tile-based action adventure game that revolves around a plagued town, which the player must save by collecting three stars hidden around the map. The player must solve the maze, collect 50 coins, and defeat 20 enemies in order to collect all the stars and unlock a special area, wherein the stars fall into place on the ground and the screen fades to white, completing a ritual and saving the town from its disease. <a href="https://editor.p5js.org/bzrymiak/full/LsRLSwip8" target="_blank">Play it for yourself</a>!</p>
-                    </section>
-
-                    <section id="objective">
-                        <h3>02.</h3>
-                        <h4>Objective</h4>
-                        <p>My goal for this project was to create something that I would enjoy playing, which is where I drew inspiration from games like Hollow Knight and Stardew Valley. More than anything, I was set on this game having multiple distinct areas to explore and somewhat of a story for the player to piece together. </p>
-
-                        <!-- map sketches -->
-                        <div class="image-grid"> 
-                            <div class="main-img-container">
-                                <div class="img-container">
-                                <img src="media/MapSketch.jpeg" width="1543" height="1130" alt="The initial map of Pestilence with 9 distinct locations including notes about possible obstacles and tokens.">
-                                </div>
-        
-                                <div class="caption-container">
-                                    <p class="caption">The initial map sketch.</p>
-                                </div>
-                            </div>
-
-                            <div class="main-img-container">
-                                <div class="img-container">
-                                <img src="media/VillageSketch.jpeg" width="1640" height="1745" alt="A detailed sketch of the village area, which includes a well and train tracks.">
-                                </div>
-        
-                                <div class="caption-container">
-                                    <p class="caption">The initial village sketch, including a train track and the proposed GUI.</p>
-                                </div>
-                            </div>
-                        </div> 
-                    </section>
-
-                    <section id="outcome">
-                        <h3>03.</h3>
-                        <h4>Outcome</h4>
-                       <p>For this project, I had clear ambitions for an explorable adventure game with assets that I would make myself. To achieve this, I had to manage my time effectively to balance the programming and art creation of the game. This was unexpectedly time consuming, since this was my first time making a game of this scale <em>and</em> creating original pixel art (and animations)! I drew on tiny canvases in Procreate and used the app's flipbook-style animation editor to bring the game's player and tokens to life. For these reasons, I ended up having to scale back my ambitious gameplay ideas.</p>
-
-                        <p>As an end result, Pestilence has 4 unique areas with their own events and features, including a maze and final room that blends into a cutscene. To reach most areas, the player will need to collect keys in order to unlock gates, however the final room is locked until the moment the player collects 3 stars that are hidden around the map. One star is collected by defeating a certain number of enemies, some of which will fly towards the player if they enter their line of sight.</p>
-
-                        <!-- screenshots -->
-                        <div class="image-grid"> 
-                            <div class="main-img-container">
-                                <div class="img-container">
-                                <img src="media/MazeCenter.png" width="1146" height="1148" alt="The player in the center of the maze, standing beside a star token.">
-                                </div>
-        
-                                <div class="caption-container">
-                                    <p class="caption">The player in the center of the maze before collecting the first star.</p>
-                                </div>
-                            </div>
-
-                            <div class="main-img-container">
-                                <div class="img-container">
-                                <img src="media/FinalGate.png" width="1146" height="1148" alt="The player beside a gate that reads 'Inscribed on the gate are three stars. It appears keys will not open this one'.">
-                                </div>
-        
-                                <div class="caption-container">
-                                    <p class="caption">The player standing at the gate to the final room, which hints at the player needing all three stars to enter.</p>
-                                </div>
-                            </div>
-                        </div> 
-                    </section>
-
-                    <section id="takeaways">
-                        <h3>04.</h3>
-                        <h4>Takeaways</h4>
-                        <p>My biggest lesson learned from this project was to perform regular user testing. I became blind to the routine of the game as I played it, and having fresh eyes to play through it illuminated a lot when it came to difficulty, accessibility, and general user enjoyment. In the future, I plan on emphasizing accessibility from the start in order to avoid issues I encountered with how the game and its story were understood by players.</p>
-                    </section>
-                </div>
-
-                    
-                
+        <div class="right bottom">
+          <div>
+            <div class="vid-container">
+              <video width="1280" height="720" loop autoplay muted>
+                <source
+                  src="media/Gameplay.mp4"
+                  type="video/mp4"
+                  alt="Gameplay featuring the player navigating the main area and collecting tokens."
+                />
+              </video>
             </div>
 
-        </section>
-        
-        <p class="bottom-nav center white-bg">☜ <a href="index.html">Home</a> ❊ <a href="funding-website.html">Next project</a> ☞</p>
-
-
-        <section id="contact">
-            <div class="contact-grid">
-                <h2>Contact</h2>
-
-                <address class="contact-info">
-                    <h3>get in touch!</h3>
-                    <p>bza78@sfu.ca</p>
-
-                    <h3>connect with me on Linkedin</h3>
-                    <p>in/<a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank">brookezrymiak</a></p>
-                </address>
+            <div class="caption-container">
+              <p class="caption">
+                Brief gameplay featuring the player in the village area
+                collecting tokens.
+              </p>
             </div>
-        </section>
-    </body>
+          </div>
+
+          <!-- mini info grid -->
+          <div class="box-grid project2">
+            <div class="box green">
+              <h3>Tools</h3>
+              <p>JavaScript, p5.js, Procreate</p>
+            </div>
+
+            <div class="box red">
+              <h3>My role</h3>
+              <p>Programming, illustration, story</p>
+            </div>
+
+            <div class="box blue">
+              <h3>Timeframe</h3>
+              <p>4 weeks</p>
+            </div>
+
+            <div class="box yellow">
+              <h3>Created for</h3>
+              <p>Digital Games (IAT 167)</p>
+            </div>
+
+            <div class="box green">
+              <h3>Team</h3>
+              <p>N/A</p>
+            </div>
+          </div>
+
+          <section id="project-overview">
+            <h3>01.</h3>
+            <h4>Project Overview</h4>
+            <p>
+              Pestilence is a 2D retro-style tile-based action adventure game
+              that revolves around a plagued town, which the player must save by
+              collecting three stars hidden around the map. The player must
+              solve the maze, collect 50 coins, and defeat 20 enemies in order
+              to collect all the stars and unlock a special area, wherein the
+              stars fall into place on the ground and the screen fades to white,
+              completing a ritual and saving the town from its disease.
+              <a
+                href="https://editor.p5js.org/bzrymiak/full/LsRLSwip8"
+                target="_blank"
+                >Play it for yourself</a
+              >!
+            </p>
+          </section>
+
+          <section id="objective">
+            <h3>02.</h3>
+            <h4>Objective</h4>
+            <p>
+              My goal for this project was to create something that I would
+              enjoy playing, which is where I drew inspiration from games like
+              Hollow Knight and Stardew Valley. More than anything, I was set on
+              this game having multiple distinct areas to explore and somewhat
+              of a story for the player to piece together.
+            </p>
+
+            <!-- map sketches -->
+            <div class="image-grid">
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/MapSketch.jpeg"
+                    width="1543"
+                    height="1130"
+                    alt="The initial map of Pestilence with 9 distinct locations including notes about possible obstacles and tokens."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">The initial map sketch.</p>
+                </div>
+              </div>
+
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/VillageSketch.jpeg"
+                    width="1640"
+                    height="1745"
+                    alt="A detailed sketch of the village area, which includes a well and train tracks."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    The initial village sketch, including a train track and the
+                    proposed GUI.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="outcome">
+            <h3>03.</h3>
+            <h4>Outcome</h4>
+            <p>
+              For this project, I had clear ambitions for an explorable
+              adventure game with assets that I would make myself. To achieve
+              this, I had to manage my time effectively to balance the
+              programming and art creation of the game. This was unexpectedly
+              time consuming, since this was my first time making a game of this
+              scale <em>and</em> creating original pixel art (and animations)! I
+              drew on tiny canvases in Procreate and used the app's
+              flipbook-style animation editor to bring the game's player and
+              tokens to life. For these reasons, I ended up having to scale back
+              my ambitious gameplay ideas.
+            </p>
+
+            <p>
+              As an end result, Pestilence has 4 unique areas with their own
+              events and features, including a maze and final room that blends
+              into a cutscene. To reach most areas, the player will need to
+              collect keys in order to unlock gates, however the final room is
+              locked until the moment the player collects 3 stars that are
+              hidden around the map. One star is collected by defeating a
+              certain number of enemies, some of which will fly towards the
+              player if they enter their line of sight.
+            </p>
+
+            <!-- screenshots -->
+            <div class="image-grid">
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/MazeCenter.png"
+                    width="1146"
+                    height="1148"
+                    alt="The player in the center of the maze, standing beside a star token."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    The player in the center of the maze before collecting the
+                    first star.
+                  </p>
+                </div>
+              </div>
+
+              <div class="main-img-container">
+                <div class="img-container">
+                  <img
+                    src="media/FinalGate.png"
+                    width="1146"
+                    height="1148"
+                    alt="The player beside a gate that reads 'Inscribed on the gate are three stars. It appears keys will not open this one'."
+                  />
+                </div>
+
+                <div class="caption-container">
+                  <p class="caption">
+                    The player standing at the gate to the final room, which
+                    hints at the player needing all three stars to enter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="takeaways">
+            <h3>04.</h3>
+            <h4>Takeaways</h4>
+            <p>
+              My biggest lesson learned from this project was to perform regular
+              user testing. I became blind to the routine of the game as I
+              played it, and having fresh eyes to play through it illuminated a
+              lot when it came to difficulty, accessibility, and general user
+              enjoyment. In the future, I plan on emphasizing accessibility from
+              the start in order to avoid issues I encountered with how the game
+              and its story were understood by players.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <p class="bottom-nav center white-bg">
+      ☜ <a href="index.html">Home</a> ❊
+      <a href="funding-website.html">Next project</a> ☞
+    </p>
+
+    <section id="contact">
+      <div class="main-info">
+        <h2>Brooke Zrymiak</h2>
+
+        <address class="contact-info">
+          <p>
+            Get in touch!
+            <a href="mailto:zrymiak.b@gmail.com">zrymiak.b@gmail.com</a>
+          </p>
+
+          <p>
+            Connect with me on
+            <a href="https://www.linkedin.com/in/brookezrymiak/" target="_blank"
+              >Linkedin ➚</a
+            >
+          </p>
+        </address>
+      </div>
+      <p class="disclaimer">
+        This site is in the process of being updated. Reach out for the best and
+        most updated information!
+      </p>
+    </section>
+  </body>
 </html>
